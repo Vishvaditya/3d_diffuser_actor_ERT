@@ -11,6 +11,11 @@ dependencies:
   - torchvision=0.14.1
   - torchaudio=0.13.1
   - pytorch-cuda=11.6
+  # Following MKL versions work on our setup
+  - mkl=2021.4.0
+  - mkl-include=2021.4.0
+  - intel-openmp
+
   - pip:
     - git+https://github.com/openai/CLIP.git
     - numpy==1.23.5
