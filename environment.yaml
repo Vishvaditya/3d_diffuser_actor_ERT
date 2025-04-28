@@ -1,4 +1,4 @@
-name: 3d_diffuser_actor
+name: ert_3d_diffuser
 channels:
   - pytorch
   - nvidia
