@@ -33,7 +33,7 @@ from online_evaluation_calvin.evaluate_utils import get_env
 logger = logging.getLogger(__name__)
 
 EP_LEN = 60
-NUM_SEQUENCES = 1000
+NUM_SEQUENCES = 10
 EXECUTE_LEN = 20
 
 
@@ -309,7 +309,8 @@ def main(args):
 
 if __name__ == "__main__":
     args = Arguments().parse_args()
-    args.local_rank = int(os.environ["LOCAL_RANK"])
+    args.local_rank = 0 #int(os.environ["LOCAL_RANK"])
+    # print("--------------", args.local_rank, "---------------")
 
     # DDP initialization
     torch.cuda.set_device(args.local_rank)
