@@ -28,3 +28,6 @@ calvin/
 
 # data directory
 data/
+
+# model weights
+model_checkpoints
