@@ -11,7 +11,7 @@ num_history=3
 diffusion_timesteps=25
 B=30
 C=192
-ngpus=6
+ngpus=1 #Change based on number of GPUs
 backbone=clip
 image_size="256,256"
 relative_action=1
@@ -53,4 +53,4 @@ torchrun --nproc_per_node $ngpus --master_port $RANDOM \
     --save_video 0 \
     --base_log_dir train_logs/${main_dir}/pretrained/eval_logs/ \
     --quaternion_format $quaternion_format \
-    --checkpoint train_logs/diffuser_actor_calvin.pth
+    --checkpoint model_checkpoints/diffuser_actor_calvin.pth
