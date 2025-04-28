@@ -1,7 +1,7 @@
 main_dir=Planner_Calvin
 
-dataset=./data/calvin/packaged_ABC_D/training
-valset=./data/calvin/packaged_ABC_D/validation
+dataset=./data/calvin/packaged_calvin_debug/training
+valset=./data/calvin/packaged_calvin_debug/validation
 
 lr=3e-4
 wd=5e-3
@@ -24,9 +24,14 @@ quaternion_format=wxyz  # IMPORTANT: change this to be the same as the training 
 
 export PYTHONPATH=`pwd`:$PYTHONPATH
 
+# Fields updated
+# --calvin_dataset_path
+# --calvin_gripper_loc_bounds
+
+
 torchrun --nproc_per_node $ngpus --master_port $RANDOM \
     online_evaluation_calvin/evaluate_policy.py \
-    --calvin_dataset_path calvin/dataset/task_ABC_D \
+    --calvin_dataset_path calvin/dataset/calvin_debug_dataset \
     --calvin_model_path calvin/calvin_models \
     --text_encoder clip \
     --text_max_length 16 \
@@ -34,7 +39,7 @@ torchrun --nproc_per_node $ngpus --master_port $RANDOM \
     --backbone $backbone \
     --gripper_loc_bounds $gripper_loc_bounds \
     --gripper_loc_bounds_buffer $gripper_buffer \
-    --calvin_gripper_loc_bounds calvin/dataset/task_ABC_D/validation/statistics.yaml \
+    --calvin_gripper_loc_bounds calvin/dataset/calvin_debug_dataset/validation/statistics.yaml \
     --embedding_dim $C \
     --action_dim 7 \
     --use_instruction 1 \
