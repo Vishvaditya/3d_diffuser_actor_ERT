@@ -82,7 +82,8 @@ class Arguments(tap.Tap):
     fps_subsampling_factor: int = 3
     num_history: int = 0
     interpolation_length: int = 2 # the number of steps to reach keypose
-    mode: str = "normal"
+    mode: str = "normal"    # Running mode "ert" or "normal"
+    annot_dir: Path = "annotations"
 
 
 def make_env(dataset_path, show_gui=True, split="validation", scene=None):
@@ -95,7 +96,7 @@ def make_env(dataset_path, show_gui=True, split="validation", scene=None):
     return env
 
 
-def evaluate_policy(model, env, conf_dir, eval_log_dir=None, save_video=False,
+def evaluate_policy(model, env, conf_dir, annot_dir, eval_log_dir=None, save_video=False,
                     sequence_indices=[]):
     """
     Run this function to evaluate a model on the CALVIN challenge.
@@ -114,7 +115,12 @@ def evaluate_policy(model, env, conf_dir, eval_log_dir=None, save_video=False,
     """
     task_cfg = OmegaConf.load(conf_dir / "callbacks/rollout/tasks/new_playtable_tasks.yaml")
     task_oracle = hydra.utils.instantiate(task_cfg)
-    val_annotations = OmegaConf.load(conf_dir / "annotations/new_playtable_validation.yaml")
+
+    # Updating val annotations input dynamically based on mode
+    if args.mode=="normal":
+        val_annotations = OmegaConf.load(annot_dir / "new_playtable_validation.yaml")
+    else:
+        val_annotations = OmegaConf.load(annot_dir / "ert_playtable_instructions.yaml")
 
     eval_log_dir = get_log_dir(eval_log_dir)
 
@@ -302,6 +308,7 @@ def main(args):
     env = make_env(args.calvin_dataset_path, show_gui=False)
     evaluate_policy(model, env,
                     conf_dir=Path(args.calvin_model_path) / "conf",
+                    annot_dir=Path(args.annot_dir), # Updated annotations path
                     eval_log_dir=args.base_log_dir,
                     sequence_indices=sequence_indices,
                     save_video=args.save_video)
