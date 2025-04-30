@@ -308,15 +308,16 @@ def collect_results(log_dir, mode, num_seq): # Added mode and num_sequences vari
 
     results, seq_inds = [], []
     for line in lines:
-        seq, res= line.split(" ")
+        seq, a, b, res= line.split("|") # a and b to get unpacked values
         results.append(int(res))
         seq_inds.append(int(seq))
 
     return results, seq_inds
 
 # Updated to incorporate running mode and num sequences in filename
-def write_results(log_dir, seq_ind, result, mode, num_seq):
+# Updated to write task and lang annotations
+def write_results(log_dir, seq_ind, result, subtask, lang_annotation, mode, num_seq):
     """Write the number of completed tasks of each instruction chain to a file.
     """
     with open(log_dir / f"result_{mode}_{num_seq}.txt", "a") as write_file:
-        write_file.write(f"{seq_ind} {result}\n")
+        write_file.write(f"{seq_ind}|{subtask}|{lang_annotation}|{result}\n")
