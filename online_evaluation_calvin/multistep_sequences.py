@@ -9,6 +9,8 @@ from operator import add
 
 import numpy as np
 from online_evaluation_calvin.evaluate_utils import temp_seed
+# from evaluate_utils import temp_seed
+
 
 logger = logging.getLogger(__name__)
 
@@ -333,7 +335,7 @@ def check_sequence(state, seq):
 def get_sequences_for_state2(args):
     state, num_sequences, i = args
     np.random.seed(i)
-    seq_len = 5
+    seq_len = 1             # Changed sequence length from 5 to 1
     results = []
 
     while len(results) < num_sequences:
