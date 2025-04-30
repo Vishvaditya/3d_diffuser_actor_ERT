@@ -21,6 +21,8 @@ gripper_loc_bounds=tasks/calvin_rel_traj_location_bounds_task_ABC_D.json
 gripper_buffer=0.01
 val_freq=5000
 quaternion_format=wxyz  # IMPORTANT: change this to be the same as the training script IF you're not using our checkpoint
+mode=normal           # Switch between 'normal' and 'ert' modes
+
 
 export PYTHONPATH=`pwd`:$PYTHONPATH
 
@@ -53,4 +55,5 @@ torchrun --nproc_per_node $ngpus --master_port $RANDOM \
     --save_video 0 \
     --base_log_dir train_logs/${main_dir}/pretrained/eval_logs/ \
     --quaternion_format $quaternion_format \
-    --checkpoint model_checkpoints/diffuser_actor_calvin.pth
+    --checkpoint model_checkpoints/diffuser_actor_calvin.pth \
+    --mode $mode
