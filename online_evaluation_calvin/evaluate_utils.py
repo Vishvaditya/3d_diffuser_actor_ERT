@@ -297,11 +297,11 @@ def get_log_dir(log_dir):
 ######################################################
 #      Functions to cache the evaluation results     #
 ######################################################
-def collect_results(log_dir):
+def collect_results(log_dir, mode, num_seq): # Added mode and num_sequences variables to filenames
     """Load the number of completed tasks of each instruction chain from a file.
     """
-    if os.path.isfile(str(Path(log_dir) / "result.txt")):
-        with open(str(Path(log_dir) / "result.txt")) as f:
+    if os.path.isfile(str(Path(log_dir) / f"result_{mode}_{num_seq}.txt")):
+        with open(str(Path(log_dir) / f"result_{mode}_{num_seq}.txt")) as f:
             lines = f.read().split("\n")[:-1]
     else:
         lines = []
@@ -314,9 +314,9 @@ def collect_results(log_dir):
 
     return results, seq_inds
 
-
-def write_results(log_dir, seq_ind, result):
+# Updated to incorporate running mode and num sequences in filename
+def write_results(log_dir, seq_ind, result, mode, num_seq):
     """Write the number of completed tasks of each instruction chain to a file.
     """
-    with open(log_dir / f"result.txt", "a") as write_file:
+    with open(log_dir / f"result_{mode}_{num_seq}.txt", "a") as write_file:
         write_file.write(f"{seq_ind} {result}\n")

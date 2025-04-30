@@ -30,11 +30,20 @@ from online_evaluation_calvin.evaluate_utils import (
 from online_evaluation_calvin.multistep_sequences import get_sequences
 from online_evaluation_calvin.evaluate_utils import get_env
 
-logger = logging.getLogger(__name__)
-
 EP_LEN = 60
-NUM_SEQUENCES = 10
+NUM_SEQUENCES = 5
 EXECUTE_LEN = 20
+
+
+logging.basicConfig(
+    filename=f"logs/test_{NUM_SEQUENCES}.log",  # Path to your log file
+    filemode="a",               # Append mode; use "w" to overwrite each time
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    level=logging.DEBUG          # Or DEBUG, WARNING, ERROR, etc.
+)
+
+
+logger = logging.getLogger(__name__)
 
 
 class Arguments(tap.Tap):
@@ -73,6 +82,7 @@ class Arguments(tap.Tap):
     fps_subsampling_factor: int = 3
     num_history: int = 0
     interpolation_length: int = 2 # the number of steps to reach keypose
+    mode: str = "normal"
 
 
 def make_env(dataset_path, show_gui=True, split="validation", scene=None):
@@ -110,7 +120,7 @@ def evaluate_policy(model, env, conf_dir, eval_log_dir=None, save_video=False,
 
     eval_sequences = get_sequences(NUM_SEQUENCES)
 
-    results, tested_sequence_indices = collect_results(eval_log_dir)
+    results, tested_sequence_indices = collect_results(eval_log_dir, args.mode, NUM_SEQUENCES) # Added mode and num_sequences variables to filenames
 
     for seq_ind, (initial_state, eval_sequence) in enumerate(eval_sequences):
         if sequence_indices and seq_ind not in sequence_indices:
@@ -121,7 +131,7 @@ def evaluate_policy(model, env, conf_dir, eval_log_dir=None, save_video=False,
             env, model, task_oracle, initial_state,
             eval_sequence, val_annotations, save_video
         )
-        write_results(eval_log_dir, seq_ind, result)
+        write_results(eval_log_dir, seq_ind, result, args.mode, NUM_SEQUENCES) # Added mode and num_sequences variables to filenames
         results.append(result)
         str_results = (
             " ".join([f"{i + 1}/5 : {v * 100:.1f}% |"
@@ -296,7 +306,7 @@ def main(args):
                     sequence_indices=sequence_indices,
                     save_video=args.save_video)
 
-    results, sequence_inds = collect_results(args.base_log_dir)
+    results, sequence_inds = collect_results(args.base_log_dir, args.mode, NUM_SEQUENCES) # Added mode and num sequences to filename
     str_results = (
         " ".join([f"{i + 1}/5 : {v * 100:.1f}% |"
         for i, v in enumerate(count_success(results))]) + "|"
