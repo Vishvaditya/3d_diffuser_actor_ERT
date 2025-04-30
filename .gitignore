@@ -31,3 +31,6 @@ data/
 
 # model weights
 model_checkpoints
+
+# logs
+logs/
