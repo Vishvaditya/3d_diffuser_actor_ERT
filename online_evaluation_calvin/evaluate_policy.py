@@ -6,6 +6,7 @@ import gc
 from typing import Tuple, Optional, List
 import random
 import logging
+import datetime
 from pathlib import Path
 
 import tap
@@ -31,12 +32,12 @@ from online_evaluation_calvin.multistep_sequences import get_sequences
 from online_evaluation_calvin.evaluate_utils import get_env
 
 EP_LEN = 60
-NUM_SEQUENCES = 5
+NUM_SEQUENCES = 50
 EXECUTE_LEN = 20
 
 
 logging.basicConfig(
-    filename=f"logs/test_{NUM_SEQUENCES}.log",  # Path to your log file
+    filename=f"logs/{datetime.datetime.now()}_{NUM_SEQUENCES}.log",  # Path to your log file
     filemode="a",               # Append mode; use "w" to overwrite each time
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     level=logging.DEBUG          # Or DEBUG, WARNING, ERROR, etc.
@@ -133,11 +134,12 @@ def evaluate_policy(model, env, conf_dir, annot_dir, eval_log_dir=None, save_vid
             continue
         if seq_ind in tested_sequence_indices:
             continue
-        result, videos = evaluate_sequence(
+        result, subtask, lang_annotation, videos = evaluate_sequence(
             env, model, task_oracle, initial_state,
             eval_sequence, val_annotations, save_video
         )
-        write_results(eval_log_dir, seq_ind, result, args.mode, NUM_SEQUENCES) # Added mode and num_sequences variables to filenames
+        write_results(eval_log_dir, seq_ind, result, 
+                      subtask, lang_annotation, args.mode, NUM_SEQUENCES) # Added mode and num_sequences variables to filenames # Also added subtask and lang annotations
         results.append(result)
         str_results = (
             " ".join([f"{i + 1}/5 : {v * 100:.1f}% |"
@@ -203,9 +205,12 @@ def evaluate_sequence(env, model, task_checker, initial_state, eval_sequence,
 
         if success:
             success_counter += 1
+            print("Task Successful")
         else:
-            return success_counter, video_aggregators
-    return success_counter, video_aggregators
+            print("Task Failed")
+            return success_counter, subtask, lang_annotation, video_aggregators
+    
+    return success_counter, subtask, lang_annotation, video_aggregators # added subtask, lang_annotation
 
 
 def rollout(env, model, task_oracle, subtask, lang_annotation):
