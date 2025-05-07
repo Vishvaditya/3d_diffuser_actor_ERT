@@ -34,3 +34,7 @@ model_checkpoints
 
 # logs
 logs/
+
+# results
+results/
+result_videos/
