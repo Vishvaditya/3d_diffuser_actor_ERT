@@ -2,6 +2,7 @@
 https://github.com/mees/calvin/blob/main/calvin_models/calvin_agent/evaluation/evaluate_policy.py
 """
 import os
+import sys
 import gc
 from typing import Tuple, Optional, List
 import random
@@ -32,19 +33,25 @@ from online_evaluation_calvin.multistep_sequences import get_sequences
 from online_evaluation_calvin.evaluate_utils import get_env
 
 EP_LEN = 60
-NUM_SEQUENCES = 50
+NUM_SEQUENCES = 5
 EXECUTE_LEN = 20
+ANNOT_NUM = 1
 
 
 logging.basicConfig(
     filename=f"logs/{datetime.datetime.now()}_{NUM_SEQUENCES}.log",  # Path to your log file
     filemode="a",               # Append mode; use "w" to overwrite each time
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    level=logging.DEBUG          # Or DEBUG, WARNING, ERROR, etc.
+    level=logging.DEBUG          # Or DEBUG, WARNING, ERROR, etc.]
 )
 
-
 logger = logging.getLogger(__name__)
+
+def log_print(*args, level=logging.INFO, sep=' ', end='\n'):
+    message = sep.join(str(arg) for arg in args) + end
+    logger.log(level, message.strip())
+
+
 
 
 class Arguments(tap.Tap):
@@ -120,8 +127,10 @@ def evaluate_policy(model, env, conf_dir, annot_dir, eval_log_dir=None, save_vid
     # Updating val annotations input dynamically based on mode
     if args.mode=="normal":
         val_annotations = OmegaConf.load(annot_dir / "new_playtable_validation.yaml")
+        print("Annotation Directory: ", os.path.join(annot_dir/"new_playtable_validation.yaml"))
     else:
         val_annotations = OmegaConf.load(annot_dir / "ert_playtable_instructions.yaml")
+        print("Annotation Directory: ", os.path.join(annot_dir/"ert_playtable_instructions.yaml"))
 
     eval_log_dir = get_log_dir(eval_log_dir)
 
@@ -136,7 +145,7 @@ def evaluate_policy(model, env, conf_dir, annot_dir, eval_log_dir=None, save_vid
             continue
         result, subtask, lang_annotation, videos = evaluate_sequence(
             env, model, task_oracle, initial_state,
-            eval_sequence, val_annotations, save_video
+            eval_sequence, val_annotations, save_video, ANNOT_NUM
         )
         write_results(eval_log_dir, seq_ind, result, 
                       subtask, lang_annotation, args.mode, NUM_SEQUENCES) # Added mode and num_sequences variables to filenames # Also added subtask and lang annotations
@@ -147,32 +156,16 @@ def evaluate_policy(model, env, conf_dir, annot_dir, eval_log_dir=None, save_vid
         )
         print(str_results + "\n")
 
-        # if save_video:
-        #     import moviepy.video.io.ImageSequenceClip
-        #     from moviepy.editor import vfx
-        #     clip = []
-        #     import cv2
-        #     for task_ind, (subtask, video) in enumerate(zip(eval_sequence, videos)):
-        #         for img_ind, img in enumerate(video):
-        #             cv2.putText(img,
-        #                         f'{task_ind}: {subtask}',
-        #                         (10, 180),
-        #                         cv2.FONT_HERSHEY_SIMPLEX, 
-        #                         0.5,
-        #                         (0, 0, 0),
-        #                         1,
-        #                         2)
-        #             video[img_ind] = img
-        #         clip.extend(video)
-        #     clip = moviepy.video.io.ImageSequenceClip.ImageSequenceClip(clip, fps=30)
-        #     clip.write_videofile(f"calvin_seq{seq_ind}.mp4")
+        # Added video save feature
+        if save_video:
+            np.savez_compressed(f"result_videos/{args.mode}_{subtask}.npz", video=videos)
 
 
     return results
 
 
 def evaluate_sequence(env, model, task_checker, initial_state, eval_sequence,
-                      val_annotations, save_video):
+                      val_annotations, save_video, annot_num):
     """
     Evaluates a sequence of language instructions.
 
@@ -198,7 +191,7 @@ def evaluate_sequence(env, model, task_checker, initial_state, eval_sequence,
     success_counter, video_aggregators = 0, []
     for subtask in eval_sequence:
         # get lang annotation for subtask
-        lang_annotation = val_annotations[subtask][0]
+        lang_annotation = val_annotations[subtask][annot_num]
         success, video = rollout(env, model, task_checker,
                                  subtask, lang_annotation)
         video_aggregators.append(video)
@@ -341,4 +334,11 @@ if __name__ == "__main__":
     torch.backends.cudnn.benchmark = True
     torch.backends.cudnn.deterministic = True
 
+    print("Running Mode: ", args.mode)
+    print("Number of sequences: ", NUM_SEQUENCES)
+    print("Annotation Number: ", ANNOT_NUM)
+
+    log_print("Running Mode: " + str(args.mode))
+    log_print("Number of sequences: "+ str(NUM_SEQUENCES))
+    log_print("Annotation Number: "+str(ANNOT_NUM))
     main(args)
