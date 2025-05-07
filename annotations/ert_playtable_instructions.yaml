@@ -105,9 +105,9 @@ open_drawer:
 - Approach the lower compartment and extend the drawer using your arm.
 - Locate the handle, grab it, and pull the drawer towards yourself.
 - Use your robotic arm to tug on the handle and open the drawer.
-- "Find the drawer\u2019s grip and apply force to pull it open."
+- "Find the drawer's grip and apply force to pull it open."
 - Ensure the drawer handle is within reach and pull it to open.
-- "Direct your arm to the drawer\u2019s handle and retract to slide it out."
+- "Direct your arm to the drawer's handle and retract to slide it out."
 - Access the drawer by securing the handle and pulling the drawer open.
 push_blue_block_left:
 - Move the blue block to the left side of the red block.
