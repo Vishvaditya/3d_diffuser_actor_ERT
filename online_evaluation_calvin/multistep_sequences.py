@@ -16,8 +16,8 @@ logger = logging.getLogger(__name__)
 
 
 task_categories = {
-    "rotate_red_block_right": 1,
-    "rotate_red_block_left": 1,
+    "rotate_red_block_right": 1, 
+    "rotate_red_block_left": 1, 
     "rotate_blue_block_right": 1,
     "rotate_blue_block_left": 1,
     "rotate_pink_block_right": 1,
@@ -34,22 +34,22 @@ task_categories = {
     "close_drawer": 3,
     "lift_red_block_table": 4,
     "lift_red_block_slider": 5,
-    "lift_red_block_drawer": 6,
+    # "lift_red_block_drawer": 6,
     "lift_blue_block_table": 4,
     "lift_blue_block_slider": 5,
-    "lift_blue_block_drawer": 6,
+    # "lift_blue_block_drawer": 6,
     "lift_pink_block_table": 4,
     "lift_pink_block_slider": 5,
-    "lift_pink_block_drawer": 6,
-    "place_in_slider": 7,
-    "place_in_drawer": 7,
+    # "lift_pink_block_drawer": 6,
+    # "place_in_slider": 7,
+    # "place_in_drawer": 7,
     "turn_on_lightbulb": 8,
     "turn_off_lightbulb": 8,
     "turn_on_led": 8,
     "turn_off_led": 8,
     "push_into_drawer": 9,
-    "stack_block": 10,
-    "unstack_block": 11,
+    # "stack_block": 10,
+    # "unstack_block": 11,
 }
 
 tasks = {
@@ -86,12 +86,12 @@ tasks = {
             "effect": {"red_block": "grasped", "grasped": 1},
         },
     ],
-    "lift_red_block_drawer": [
-        {
-            "condition": {"red_block": "drawer", "drawer": "open", "grasped": 0},
-            "effect": {"red_block": "grasped", "grasped": 1},
-        }
-    ],
+    # "lift_red_block_drawer": [
+    #     {
+    #         "condition": {"red_block": "drawer", "drawer": "open", "grasped": 0},
+    #         "effect": {"red_block": "grasped", "grasped": 1},
+    #     }
+    # ],
     "lift_blue_block_table": [
         {"condition": {"blue_block": "table", "grasped": 0}, "effect": {"blue_block": "grasped", "grasped": 1}}
     ],
@@ -105,12 +105,12 @@ tasks = {
             "effect": {"blue_block": "grasped", "grasped": 1},
         },
     ],
-    "lift_blue_block_drawer": [
-        {
-            "condition": {"blue_block": "drawer", "drawer": "open", "grasped": 0},
-            "effect": {"blue_block": "grasped", "grasped": 1},
-        }
-    ],
+    # "lift_blue_block_drawer": [
+    #     {
+    #         "condition": {"blue_block": "drawer", "drawer": "open", "grasped": 0},
+    #         "effect": {"blue_block": "grasped", "grasped": 1},
+    #     }
+    # ],
     "lift_pink_block_table": [
         {"condition": {"pink_block": "table", "grasped": 0}, "effect": {"pink_block": "grasped", "grasped": 1}}
     ],
@@ -124,104 +124,104 @@ tasks = {
             "effect": {"pink_block": "grasped", "grasped": 1},
         },
     ],
-    "lift_pink_block_drawer": [
-        {
-            "condition": {"pink_block": "drawer", "drawer": "open", "grasped": 0},
-            "effect": {"pink_block": "grasped", "grasped": 1},
-        }
-    ],
-    "place_in_slider": [
-        {
-            "condition": {"red_block": "grasped", "slider": "right", "grasped": 1},
-            "effect": {"red_block": "slider_right", "grasped": 0},
-        },
-        {
-            "condition": {"red_block": "grasped", "slider": "left", "grasped": 1},
-            "effect": {"red_block": "slider_left", "grasped": 0},
-        },
-        {
-            "condition": {"blue_block": "grasped", "slider": "right", "grasped": 1},
-            "effect": {"blue_block": "slider_right", "grasped": 0},
-        },
-        {
-            "condition": {"blue_block": "grasped", "slider": "left", "grasped": 1},
-            "effect": {"blue_block": "slider_left", "grasped": 0},
-        },
-        {
-            "condition": {"pink_block": "grasped", "slider": "right", "grasped": 1},
-            "effect": {"pink_block": "slider_right", "grasped": 0},
-        },
-        {
-            "condition": {"pink_block": "grasped", "slider": "left", "grasped": 1},
-            "effect": {"pink_block": "slider_left", "grasped": 0},
-        },
-    ],
-    "place_in_drawer": [
-        {
-            "condition": {"red_block": "grasped", "drawer": "open", "grasped": 1},
-            "effect": {"red_block": "drawer", "grasped": 0},
-        },
-        {
-            "condition": {"blue_block": "grasped", "drawer": "open", "grasped": 1},
-            "effect": {"blue_block": "drawer", "grasped": 0},
-        },
-        {
-            "condition": {"pink_block": "grasped", "drawer": "open", "grasped": 1},
-            "effect": {"pink_block": "drawer", "grasped": 0},
-        },
-    ],
-    "stack_block": [
-        {
-            "condition": {"red_block": "grasped", "blue_block": "table", "grasped": 1},
-            "effect": {"red_block": "stacked_top", "blue_block": "stacked_bottom", "grasped": 0},
-        },
-        {
-            "condition": {"red_block": "grasped", "pink_block": "table", "grasped": 1},
-            "effect": {"red_block": "stacked_top", "pink_block": "stacked_bottom", "grasped": 0},
-        },
-        {
-            "condition": {"blue_block": "grasped", "red_block": "table", "grasped": 1},
-            "effect": {"blue_block": "stacked_top", "red_block": "stacked_bottom", "grasped": 0},
-        },
-        {
-            "condition": {"blue_block": "grasped", "pink_block": "table", "grasped": 1},
-            "effect": {"blue_block": "stacked_top", "pink_block": "stacked_bottom", "grasped": 0},
-        },
-        {
-            "condition": {"pink_block": "grasped", "red_block": "table", "grasped": 1},
-            "effect": {"pink_block": "stacked_top", "red_block": "stacked_bottom", "grasped": 0},
-        },
-        {
-            "condition": {"pink_block": "grasped", "blue_block": "table", "grasped": 1},
-            "effect": {"pink_block": "stacked_top", "blue_block": "stacked_bottom", "grasped": 0},
-        },
-    ],
-    "unstack_block": [
-        {
-            "condition": {"red_block": "stacked_top", "blue_block": "stacked_bottom", "grasped": 0},
-            "effect": {"red_block": "table", "blue_block": "table"},
-        },
-        {
-            "condition": {"red_block": "stacked_top", "pink_block": "stacked_bottom", "grasped": 0},
-            "effect": {"red_block": "table", "pink_block": "table"},
-        },
-        {
-            "condition": {"blue_block": "stacked_top", "red_block": "stacked_bottom", "grasped": 0},
-            "effect": {"blue_block": "table", "red_block": "table"},
-        },
-        {
-            "condition": {"blue_block": "stacked_top", "pink_block": "stacked_bottom", "grasped": 0},
-            "effect": {"blue_block": "table", "pink_block": "table"},
-        },
-        {
-            "condition": {"pink_block": "stacked_top", "red_block": "stacked_bottom", "grasped": 0},
-            "effect": {"pink_block": "table", "red_block": "table"},
-        },
-        {
-            "condition": {"pink_block": "stacked_top", "blue_block": "stacked_bottom", "grasped": 0},
-            "effect": {"pink_block": "table", "blue_block": "table"},
-        },
-    ],
+    # "lift_pink_block_drawer": [
+    #     {
+    #         "condition": {"pink_block": "drawer", "drawer": "open", "grasped": 0},
+    #         "effect": {"pink_block": "grasped", "grasped": 1},
+    #     }
+    # ],
+    # "place_in_slider": [
+    #     {
+    #         "condition": {"red_block": "grasped", "slider": "right", "grasped": 1},
+    #         "effect": {"red_block": "slider_right", "grasped": 0},
+    #     },
+    #     {
+    #         "condition": {"red_block": "grasped", "slider": "left", "grasped": 1},
+    #         "effect": {"red_block": "slider_left", "grasped": 0},
+    #     },
+    #     {
+    #         "condition": {"blue_block": "grasped", "slider": "right", "grasped": 1},
+    #         "effect": {"blue_block": "slider_right", "grasped": 0},
+    #     },
+    #     {
+    #         "condition": {"blue_block": "grasped", "slider": "left", "grasped": 1},
+    #         "effect": {"blue_block": "slider_left", "grasped": 0},
+    #     },
+    #     {
+    #         "condition": {"pink_block": "grasped", "slider": "right", "grasped": 1},
+    #         "effect": {"pink_block": "slider_right", "grasped": 0},
+    #     },
+    #     {
+    #         "condition": {"pink_block": "grasped", "slider": "left", "grasped": 1},
+    #         "effect": {"pink_block": "slider_left", "grasped": 0},
+    #     },
+    # ],
+    # "place_in_drawer": [
+    #     {
+    #         "condition": {"red_block": "grasped", "drawer": "open", "grasped": 1},
+    #         "effect": {"red_block": "drawer", "grasped": 0},
+    #     },
+    #     {
+    #         "condition": {"blue_block": "grasped", "drawer": "open", "grasped": 1},
+    #         "effect": {"blue_block": "drawer", "grasped": 0},
+    #     },
+    #     {
+    #         "condition": {"pink_block": "grasped", "drawer": "open", "grasped": 1},
+    #         "effect": {"pink_block": "drawer", "grasped": 0},
+    #     },
+    # ],
+    # "stack_block": [
+    #     {
+    #         "condition": {"red_block": "grasped", "blue_block": "table", "grasped": 1},
+    #         "effect": {"red_block": "stacked_top", "blue_block": "stacked_bottom", "grasped": 0},
+    #     },
+    #     {
+    #         "condition": {"red_block": "grasped", "pink_block": "table", "grasped": 1},
+    #         "effect": {"red_block": "stacked_top", "pink_block": "stacked_bottom", "grasped": 0},
+    #     },
+    #     {
+    #         "condition": {"blue_block": "grasped", "red_block": "table", "grasped": 1},
+    #         "effect": {"blue_block": "stacked_top", "red_block": "stacked_bottom", "grasped": 0},
+    #     },
+    #     {
+    #         "condition": {"blue_block": "grasped", "pink_block": "table", "grasped": 1},
+    #         "effect": {"blue_block": "stacked_top", "pink_block": "stacked_bottom", "grasped": 0},
+    #     },
+    #     {
+    #         "condition": {"pink_block": "grasped", "red_block": "table", "grasped": 1},
+    #         "effect": {"pink_block": "stacked_top", "red_block": "stacked_bottom", "grasped": 0},
+    #     },
+    #     {
+    #         "condition": {"pink_block": "grasped", "blue_block": "table", "grasped": 1},
+    #         "effect": {"pink_block": "stacked_top", "blue_block": "stacked_bottom", "grasped": 0},
+    #     },
+    # ],
+    # "unstack_block": [
+    #     {
+    #         "condition": {"red_block": "stacked_top", "blue_block": "stacked_bottom", "grasped": 0},
+    #         "effect": {"red_block": "table", "blue_block": "table"},
+    #     },
+    #     {
+    #         "condition": {"red_block": "stacked_top", "pink_block": "stacked_bottom", "grasped": 0},
+    #         "effect": {"red_block": "table", "pink_block": "table"},
+    #     },
+    #     {
+    #         "condition": {"blue_block": "stacked_top", "red_block": "stacked_bottom", "grasped": 0},
+    #         "effect": {"blue_block": "table", "red_block": "table"},
+    #     },
+    #     {
+    #         "condition": {"blue_block": "stacked_top", "pink_block": "stacked_bottom", "grasped": 0},
+    #         "effect": {"blue_block": "table", "pink_block": "table"},
+    #     },
+    #     {
+    #         "condition": {"pink_block": "stacked_top", "red_block": "stacked_bottom", "grasped": 0},
+    #         "effect": {"pink_block": "table", "red_block": "table"},
+    #     },
+    #     {
+    #         "condition": {"pink_block": "stacked_top", "blue_block": "stacked_bottom", "grasped": 0},
+    #         "effect": {"pink_block": "table", "blue_block": "table"},
+    #     },
+    # ],
     "turn_on_lightbulb": [{"condition": {"lightbulb": 0, "grasped": 0}, "effect": {"lightbulb": 1}}],
     "turn_off_lightbulb": [{"condition": {"lightbulb": 1, "grasped": 0}, "effect": {"lightbulb": 0}}],
     "turn_on_led": [{"condition": {"led": 0, "grasped": 0}, "effect": {"led": 1}}],
@@ -332,18 +332,29 @@ def check_sequence(state, seq):
     return len(categories) == len(set(categories))
 
 
+# Updated to only get tasks available in ERT
 def get_sequences_for_state2(args):
     state, num_sequences, i = args
     np.random.seed(i)
     seq_len = 1             # Changed sequence length from 5 to 1
     results = []
 
-    while len(results) < num_sequences:
-        seq = np.random.choice(list(tasks.keys()), size=seq_len, replace=False)
+    # while len(results) < num_sequences:
+    #     seq = np.random.choice(list(tasks.keys()), size=seq_len, replace=False)
+    #     if check_sequence(state, seq):
+    #         results.append(seq)
+
+    for task_name in tasks.keys():
+        if len(results) == 27:
+            break
+        seq = np.array([task_name])
         if check_sequence(state, seq):
             results.append(seq)
-    return results
+    
+    # print("Len of result array: ", len(results))
+    # print(results)
 
+    return results
 
 def flatten(t):
     return [tuple(item.tolist()) for sublist in t for item in sublist]
@@ -371,14 +382,37 @@ def get_sequences(num_sequences=1000, num_workers=None):
     # set the numpy seed temporarily to 0
     with temp_seed(0):
         num_workers = multiprocessing.cpu_count() if num_workers is None else num_workers
-        with ProcessPoolExecutor(max_workers=num_workers) as executor:
-            results = flatten(
-                executor.map(
-                    get_sequences_for_state2, zip(initial_states, num_sequences_per_state, range(len(initial_states)))
-                )
-            )
-        results = list(zip(np.repeat(initial_states, num_sequences_per_state), results))
-        np.random.shuffle(results)
+        # with ProcessPoolExecutor(max_workers=num_workers) as executor:
+        #     results = flatten(
+        #         executor.map(
+        #             get_sequences_for_state2, zip(initial_states, num_sequences_per_state, range(len(initial_states))) # Removed num_sequences_per_state
+        #         )
+        #     )
+        seen_tasks = set()
+        results = []
+
+        for i, (state, _) in enumerate(zip(initial_states, num_sequences_per_state)):
+            for task_name in tasks.keys():
+                if task_name in seen_tasks:
+                    continue
+                seq = np.array([task_name])
+                if check_sequence(state, seq):
+                    results.append((state, tuple(seq.tolist())))
+                    seen_tasks.add(task_name)
+                    break  # move to next state after first successful task
+
+            if len(seen_tasks) == len(tasks):
+                break  # all unique tasks covered
+
+        print("-----------Results-----------")
+        print(len(results))
+        # print(num_sequences_per_state)
+        # print(results)
+        # results = list(zip(np.repeat(initial_states, num_sequences_per_state), results))
+
+        # np.random.shuffle(results)
+    print("Total number of sequences: ", len(results))
+    # print(results)
     logger.info("Done generating evaluation sequences.")
 
     return results
