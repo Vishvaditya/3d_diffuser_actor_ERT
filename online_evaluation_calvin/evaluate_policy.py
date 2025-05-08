@@ -33,9 +33,9 @@ from online_evaluation_calvin.multistep_sequences import get_sequences
 from online_evaluation_calvin.evaluate_utils import get_env
 
 EP_LEN = 60
-NUM_SEQUENCES = 5
+NUM_SEQUENCES = 27
 EXECUTE_LEN = 20
-ANNOT_NUM = 1
+ANNOT_NUM = 0
 
 
 logging.basicConfig(
@@ -65,7 +65,7 @@ class Arguments(tap.Tap):
     save_video: int = 0
 
     # Offline data loader
-    seed: int = 0
+    seed: int = 17
     tasks: Tuple[str, ...] # indicates the environment
     checkpoint: Path
     gripper_loc_bounds: Optional[str] = None
@@ -136,7 +136,7 @@ def evaluate_policy(model, env, conf_dir, annot_dir, eval_log_dir=None, save_vid
 
     eval_sequences = get_sequences(NUM_SEQUENCES)
 
-    results, tested_sequence_indices = collect_results(eval_log_dir, args.mode, NUM_SEQUENCES) # Added mode and num_sequences variables to filenames
+    results, tested_sequence_indices = collect_results(eval_log_dir, args.mode, args.seed, NUM_SEQUENCES, ANNOT_NUM) # Added mode and num_sequences variables to filenames
 
     for seq_ind, (initial_state, eval_sequence) in enumerate(eval_sequences):
         if sequence_indices and seq_ind not in sequence_indices:
@@ -148,7 +148,7 @@ def evaluate_policy(model, env, conf_dir, annot_dir, eval_log_dir=None, save_vid
             eval_sequence, val_annotations, save_video, ANNOT_NUM
         )
         write_results(eval_log_dir, seq_ind, result, 
-                      subtask, lang_annotation, args.mode, NUM_SEQUENCES) # Added mode and num_sequences variables to filenames # Also added subtask and lang annotations
+                      subtask, lang_annotation, args.mode, args.seed, NUM_SEQUENCES, ANNOT_NUM) # Added mode and num_sequences variables to filenames # Also added subtask and lang annotations
         results.append(result)
         str_results = (
             " ".join([f"{i + 1}/5 : {v * 100:.1f}% |"
@@ -158,7 +158,7 @@ def evaluate_policy(model, env, conf_dir, annot_dir, eval_log_dir=None, save_vid
 
         # Added video save feature
         if save_video:
-            np.savez_compressed(f"result_videos/{args.mode}_{subtask}.npz", video=videos)
+            np.savez_compressed(f"result_videos/video_{args.mode}_seed_{args.seed}_task_{subtask}_annot_{ANNOT_NUM}.npz", video=videos)#f"result_{mode}_seed_{seed}_annot_{annot_num}.txt
 
 
     return results
@@ -311,7 +311,7 @@ def main(args):
                     sequence_indices=sequence_indices,
                     save_video=args.save_video)
 
-    results, sequence_inds = collect_results(args.base_log_dir, args.mode, NUM_SEQUENCES) # Added mode and num sequences to filename
+    results, sequence_inds = collect_results(args.base_log_dir, args.mode, args.seed, NUM_SEQUENCES, ANNOT_NUM) # Added mode and num sequences to filename
     str_results = (
         " ".join([f"{i + 1}/5 : {v * 100:.1f}% |"
         for i, v in enumerate(count_success(results))]) + "|"
