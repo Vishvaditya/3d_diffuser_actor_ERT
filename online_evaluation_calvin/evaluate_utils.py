@@ -297,11 +297,11 @@ def get_log_dir(log_dir):
 ######################################################
 #      Functions to cache the evaluation results     #
 ######################################################
-def collect_results(log_dir, mode, num_seq): # Added mode and num_sequences variables to filenames
+def collect_results(log_dir, mode, seed, num_seq, annot_num): # Added mode and num_sequences variables to filenames
     """Load the number of completed tasks of each instruction chain from a file.
     """
-    if os.path.isfile(str(Path(log_dir) / f"result_{mode}_{num_seq}.txt")):
-        with open(str(Path(log_dir) / f"result_{mode}_{num_seq}.txt")) as f:
+    if os.path.isfile(str(Path(log_dir) / f"result_{mode}_seed_{seed}_annot_{annot_num}.txt")):
+        with open(str(Path(log_dir) / f"result_{mode}_seed_{seed}_annot_{annot_num}.txt")) as f:
             lines = f.read().split("\n")[:-1]
     else:
         lines = []
@@ -316,8 +316,8 @@ def collect_results(log_dir, mode, num_seq): # Added mode and num_sequences vari
 
 # Updated to incorporate running mode and num sequences in filename
 # Updated to write task and lang annotations
-def write_results(log_dir, seq_ind, result, subtask, lang_annotation, mode, num_seq):
+def write_results(log_dir, seq_ind, result, subtask, lang_annotation, mode, seed, num_seq, annot_num):
     """Write the number of completed tasks of each instruction chain to a file.
     """
-    with open(log_dir / f"result_{mode}_{num_seq}.txt", "a") as write_file:
+    with open(log_dir / f"result_{mode}_seed_{seed}_annot_{annot_num}.txt", "a") as write_file:
         write_file.write(f"{seq_ind}|{subtask}|{lang_annotation}|{result}\n")
