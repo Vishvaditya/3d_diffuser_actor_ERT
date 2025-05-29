@@ -21,7 +21,7 @@ gripper_loc_bounds=tasks/calvin_rel_traj_location_bounds_task_ABC_D.json
 gripper_buffer=0.01
 val_freq=5000
 quaternion_format=wxyz  # IMPORTANT: change this to be the same as the training script IF you're not using our checkpoint
-mode=normal           # Switch between 'normal' and 'ert' modes
+mode=descriptive           # Switch between 'normal' and 'ert' modes
 
 
 export PYTHONPATH=`pwd`:$PYTHONPATH
@@ -29,14 +29,14 @@ export PYTHONPATH=`pwd`:$PYTHONPATH
 # Fields updated
 # --calvin_dataset_path
 # --calvin_gripper_loc_bounds
-
+# --text_max_length increased to 32 from 16
 
 torchrun --nproc_per_node $ngpus --master_port $RANDOM \
     online_evaluation_calvin/evaluate_policy.py \
     --calvin_dataset_path calvin/dataset/calvin_debug_dataset \
     --calvin_model_path calvin/calvin_models \
     --text_encoder clip \
-    --text_max_length 16 \
+    --text_max_length 32 \
     --tasks A B C D\
     --backbone $backbone \
     --gripper_loc_bounds $gripper_loc_bounds \
@@ -52,7 +52,7 @@ torchrun --nproc_per_node $ngpus --master_port $RANDOM \
     --relative_action $relative_action \
     --fps_subsampling_factor $fps_subsampling_factor \
     --lang_enhanced $lang_enhanced \
-    --save_video 0 \
+    --save_video 1 \
     --base_log_dir train_logs/${main_dir}/pretrained/eval_logs/ \
     --quaternion_format $quaternion_format \
     --checkpoint model_checkpoints/diffuser_actor_calvin.pth \
