@@ -65,7 +65,7 @@ class Arguments(tap.Tap):
     save_video: int = 0
 
     # Offline data loader
-    seed: int = 17
+    seed: int = 0
     tasks: Tuple[str, ...] # indicates the environment
     checkpoint: Path
     gripper_loc_bounds: Optional[str] = None
@@ -128,9 +128,13 @@ def evaluate_policy(model, env, conf_dir, annot_dir, eval_log_dir=None, save_vid
     if args.mode=="normal":
         val_annotations = OmegaConf.load(annot_dir / "new_playtable_validation.yaml")
         print("Annotation Directory: ", os.path.join(annot_dir/"new_playtable_validation.yaml"))
-    else:
+    elif args.mode == "ert":
         val_annotations = OmegaConf.load(annot_dir / "ert_playtable_instructions.yaml")
         print("Annotation Directory: ", os.path.join(annot_dir/"ert_playtable_instructions.yaml"))
+
+    elif args.mode == "descriptive":
+        val_annotations = OmegaConf.load(annot_dir / "descriptive_playtable_instructions.yaml")
+        print("Annotation Directory: ", os.path.join(annot_dir/"descriptive_playtable_instructions.yaml"))
 
     eval_log_dir = get_log_dir(eval_log_dir)
 
