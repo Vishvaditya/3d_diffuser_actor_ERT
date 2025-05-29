@@ -1,0 +1,47 @@
+# rotation
+rotate_red_block_right: ["locate the red block, move towards it, grasp it with the robotic arm, and rotate it to the right"]
+rotate_red_block_left: ["locate the red block, move towards it, grasp it with the robotic arm, and rotate it to the left"]
+rotate_blue_block_right: ["locate the blue block, move towards it, grasp it with the robotic arm, and rotate it to the right"]
+rotate_blue_block_left: ["locate the blue block, move towards it, grasp it with the robotic arm, and rotate it to the left"]
+rotate_pink_block_right: ["locate the pink block, move towards it, grasp it with the robotic arm, and rotate it to the right"]
+rotate_pink_block_left: ["locate the pink block, move towards it, grasp it with the robotic arm, and rotate it to the left"]
+
+# sliding
+push_red_block_right: ["identify the red block, approach it, position the gripper behind it, and push it towards the right"]
+push_red_block_left: ["identify the red block, approach it, position the gripper behind it, and push it towards the left"]
+push_blue_block_right: ["identify the blue block, approach it, position the gripper behind it, and push it towards the right"]
+push_blue_block_left: ["identify the blue block, approach it, position the gripper behind it, and push it towards the left"]
+push_pink_block_right: ["identify the pink block, approach it, position the gripper behind it, and push it towards the right"]
+push_pink_block_left: ["identify the pink block, approach it, position the gripper behind it, and push it towards the left"]
+
+# open/close
+move_slider_left: ["detect the slider, move to its handle, and push it gently towards the left side"]
+move_slider_right: ["detect the slider, move to its handle, and push it gently towards the right side"]
+open_drawer: ["identify the drawer handle, reach for it, grasp it, and pull to open the drawer fully"]
+close_drawer: ["identify the drawer handle, reach for it, and push it firmly to close the drawer"]
+
+# lifting
+lift_red_block_table: ["locate the red block on the table, reach it, grasp it with the gripper, and lift it upwards"]
+lift_blue_block_table: ["locate the blue block on the table, reach it, grasp it with the gripper, and lift it upwards"]
+lift_pink_block_table: ["locate the pink block on the table, reach it, grasp it with the gripper, and lift it upwards"]
+
+lift_red_block_slider: ["locate the red block in the slider, reach inside, grasp it carefully, and lift it out"]
+lift_blue_block_slider: ["locate the blue block in the slider, reach inside, grasp it carefully, and lift it out"]
+lift_pink_block_slider: ["locate the pink block in the slider, reach inside, grasp it carefully, and lift it out"]
+
+lift_red_block_drawer: ["open the drawer, locate the red block, reach in, grasp it, and lift it out of the drawer"]
+lift_blue_block_drawer: ["open the drawer, locate the blue block, reach in, grasp it, and lift it out of the drawer"]
+lift_pink_block_drawer: ["open the drawer, locate the pink block, reach in, grasp it, and lift it out of the drawer"]
+
+place_in_slider: ["navigate to the slider, open it if closed, position the block above the slider compartment, and release it gently inside"]
+place_in_drawer: ["open the drawer, position the block above it, lower the block inside, and release it gently"]
+
+push_into_drawer: ["locate the block and the drawer, push the block forward so that it slides into the drawer opening"]
+
+stack_block: ["identify the stacking area, align the grasped block above it, and carefully place it on top of existing blocks"]
+unstack_block: ["locate the top block in the stack, grasp it carefully, and lift it away from the stack"]
+
+turn_on_lightbulb: ["locate the light switch, move the arm towards it, and flip it to turn on the light bulb"]
+turn_off_lightbulb: ["locate the light switch, move the arm towards it, and flip it to turn off the light bulb"]
+turn_on_led: ["locate the LED button, approach it, and press it to turn on the LED light"]
+turn_off_led: ["locate the LED button, approach it, and press it to turn off the LED light"]
