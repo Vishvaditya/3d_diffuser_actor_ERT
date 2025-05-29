@@ -15,6 +15,9 @@ from tqdm.auto import tqdm
 import torch
 import numpy as np
 
+# Loading YAML
+import yaml
+
 
 TextEncoder = Literal["bert", "clip"]
 
@@ -62,8 +65,14 @@ if __name__ == "__main__":
     args = Arguments().parse_args()
     print(args)
 
-    annotations = np.load(str(args.annotation_path), allow_pickle=True).item()
-    instructions_string = [s + '.' for s in annotations['language']['ann']]
+    # Following are the lines of code used to generate the original list of strings
+    # annotations = np.load(str(args.annotation_path), allow_pickle=True).item()
+    # instructions_string = [s + '.' for s in annotations['language']['ann']] 
+
+
+    with open(args.annotation_path, "r") as f:
+        data = yaml.safe_load(f)
+    instructions_string = [desc for descriptions in data.values() for desc in descriptions]
 
     tokenizer = load_tokenizer(args.encoder)
     tokenizer.model_max_length = args.model_max_length
