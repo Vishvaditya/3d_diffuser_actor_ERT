@@ -38,3 +38,7 @@ logs/
 # results
 results/
 result_videos/
+
+# zip files
+*.zip
+*.csv
