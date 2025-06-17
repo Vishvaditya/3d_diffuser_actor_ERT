@@ -34,22 +34,22 @@ task_categories = {
     "close_drawer": 3,
     "lift_red_block_table": 4,
     "lift_red_block_slider": 5,
-    # "lift_red_block_drawer": 6,
+    # "lift_red_block_drawer": 6, -------------------------------------
     "lift_blue_block_table": 4,
     "lift_blue_block_slider": 5,
-    # "lift_blue_block_drawer": 6,
+    # "lift_blue_block_drawer": 6, ----------------------------------
     "lift_pink_block_table": 4,
     "lift_pink_block_slider": 5,
-    # "lift_pink_block_drawer": 6,
-    # "place_in_slider": 7,
-    # "place_in_drawer": 7,
+    # "lift_pink_block_drawer": 6, -----------------------------------
+    # "place_in_slider": 7, -----------------------------------
+    # "place_in_drawer": 7, -----------------------------------
     "turn_on_lightbulb": 8,
     "turn_off_lightbulb": 8,
     "turn_on_led": 8,
     "turn_off_led": 8,
     "push_into_drawer": 9,
-    # "stack_block": 10,
-    # "unstack_block": 11,
+    # "stack_block": 10, -----------------------------------
+    # "unstack_block": 11, -----------------------------------
 }
 
 tasks = {
@@ -86,12 +86,16 @@ tasks = {
             "effect": {"red_block": "grasped", "grasped": 1},
         },
     ],
+# -----------------------------------------------------START---------------------------------------------------------------------------
+
     # "lift_red_block_drawer": [
     #     {
     #         "condition": {"red_block": "drawer", "drawer": "open", "grasped": 0},
     #         "effect": {"red_block": "grasped", "grasped": 1},
     #     }
     # ],
+# ------------------------------------------------------END---------------------------------------------------------------------------
+
     "lift_blue_block_table": [
         {"condition": {"blue_block": "table", "grasped": 0}, "effect": {"blue_block": "grasped", "grasped": 1}}
     ],
@@ -105,12 +109,18 @@ tasks = {
             "effect": {"blue_block": "grasped", "grasped": 1},
         },
     ],
+
+# --------------------------------------------------------START-------------------------------------------------------------------------
     # "lift_blue_block_drawer": [
     #     {
     #         "condition": {"blue_block": "drawer", "drawer": "open", "grasped": 0},
     #         "effect": {"blue_block": "grasped", "grasped": 1},
     #     }
     # ],
+
+# ----------------------------------------------------------END------------------------------------------------------------------------
+
+
     "lift_pink_block_table": [
         {"condition": {"pink_block": "table", "grasped": 0}, "effect": {"pink_block": "grasped", "grasped": 1}}
     ],
@@ -124,6 +134,8 @@ tasks = {
             "effect": {"pink_block": "grasped", "grasped": 1},
         },
     ],
+
+# --------------------------------------------------------START-----------------------------------------------------------------------
     # "lift_pink_block_drawer": [
     #     {
     #         "condition": {"pink_block": "drawer", "drawer": "open", "grasped": 0},
@@ -222,6 +234,8 @@ tasks = {
     #         "effect": {"pink_block": "table", "blue_block": "table"},
     #     },
     # ],
+# -----------------------------------------------------END----------------------------------------------------------------------------------
+
     "turn_on_lightbulb": [{"condition": {"lightbulb": 0, "grasped": 0}, "effect": {"lightbulb": 1}}],
     "turn_off_lightbulb": [{"condition": {"lightbulb": 1, "grasped": 0}, "effect": {"lightbulb": 0}}],
     "turn_on_led": [{"condition": {"led": 0, "grasped": 0}, "effect": {"led": 1}}],
@@ -381,7 +395,7 @@ def get_sequences(num_sequences=1000, num_workers=None):
     logger.info("Start generating evaluation sequences.")
     # set the numpy seed temporarily to 0
     with temp_seed(0):
-        num_workers = multiprocessing.cpu_count() if num_workers is None else num_workers
+        # num_workers = multiprocessing.cpu_count() if num_workers is None else num_workers
         # with ProcessPoolExecutor(max_workers=num_workers) as executor:
         #     results = flatten(
         #         executor.map(
@@ -405,7 +419,7 @@ def get_sequences(num_sequences=1000, num_workers=None):
                 break  # all unique tasks covered
 
         print("-----------Results-----------")
-        print(len(results))
+        # print(len(results))
         # print(num_sequences_per_state)
         # print(results)
         # results = list(zip(np.repeat(initial_states, num_sequences_per_state), results))
