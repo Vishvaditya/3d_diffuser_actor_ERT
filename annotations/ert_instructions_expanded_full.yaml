@@ -1,0 +1,1647 @@
+close_drawer:
+- Move your arm towards the open drawer and push it until it closes completely.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Detect the open drawer and apply sufficient force to slide it shut.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Align with the drawer's handle and pull it back to the closed position.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Gently push the open drawer until it is flush with the cabinet.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Position yourself in front of the open drawer and close it by pushing forwards.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Slide the partially open drawer fully into the closed position.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Approach the drawer, grasp the handle, and pull it shut.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Identify the drawer's edge and give it a firm push to ensure it closes.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Use your sensor to locate the open drawer and carefully slide it closed.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Move to the front of the drawer and apply steady force until it is fully closed.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+lift_blue_block_slider:
+- Pick up the blue block from the table.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Identify the blue object and lift it away from the slider.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Find the blue item and raise it.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Grab the blue piece and move it upwards.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Locate the blue block and elevate it.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Lift the blue block clear of the surface.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Move the blue cube up from the slider area.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Hold the blue block and lift it high.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Secure the blue block in your grip and lift.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Raise the blue block above the table.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+lift_blue_block_table:
+- Locate the blue block on the table and pick it up.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Identify the blue object among the blocks and lift it from the table.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Find the blue block and elevate it using the robotic arm.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Use the robot's gripper to grasp the blue block and lift it off the table surface.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Target the blue block on the table and raise it into the air.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Spot the blue block, engage the robot's hand, and bring it upwards.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Approach the blue block on the table and elevate it carefully.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Detect the blue block on the table and lift it with the robot's arm.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Grasp the blue block from the table and hold it above the surface.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Pinpoint the blue block on the table and hoist it up using the robot.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+lift_pink_block_slider:
+- Grip the pink block gently and raise it using the slider mechanism.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Position the robotic arm over the pink block and elevate it carefully.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Move the arm to the pink block and adjust the slider to pick it up.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Identify the pink block on the workbench, use the slider tool to lift it.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Gently clasp the pink block and slide it upwards smoothly.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Direct the robotic gripper to the pink block and lift it using the provided slider.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Align the gripper with the pink block and raise the block using the sliding tool.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Approach the pink block with the robotic arm and employ the slider to elevate it.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Use the robot gripper to gently grasp and lift the pink block with a sliding motion.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Locate the pink block and utilize the slider to carefully elevate it from its position.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+lift_pink_block_table:
+- Pick up the pink block from the table.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Lift the pink piece that's on the table.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Grab the pink object from the table surface.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Raise the pink block from its current position on the table.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Retrieve the pink block and lift it off the tabletop.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Hoist the pink item from the table.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Elevate the pink block sitting on the table.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Collect the pink block from the tabletop and lift it up.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Secure the pink object on the table and raise it.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Lift the pink cube or block lying on the table.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+lift_red_block_slider:
+- Locate the red block on the table and lift it upwards using the robot arm.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Pick up the red object next to the robot and raise it gently.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Identify the red cube and move it vertically away from the table surface.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Find the red block on the workspace and elevate it carefully.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Use the robot's manipulator to pick the red block and pull it upwards.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Spot the red square piece and lift it straight upwards.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Engage the robot arm to grasp the red block and elevate it slightly.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Seize the red cube and raise it safely from its position.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Target the red block and operate the arm to hoist it.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Focus on the red block and execute an upward lift maneuver.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+lift_red_block_table:
+- Pick up the red block from the table.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Locate the red object and raise it from its spot.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Identify the red piece and lift it upwards.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Find the red block on the surface and elevate it.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Seize the red block and hold it above the table.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Lift the red cube that is lying on the table.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Raise the red block from the table to a higher position.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Grasp the red block and elevate it from the table.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Remove the red block upwards from where it is placed.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Hoist the red block into the air from the table.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+move_slider_left:
+- Grasp the slider with the robot's arm and push it to the left side.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Identify the slider on the workbench and slide it towards the left until it can't move anymore.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Use the robot's manipulator to shift the slider leftward by a few inches.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Locate the handle on the slider and gently move it in the left direction.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Engage the robotic arm to slide the slider to the left end of its track.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Guide the slider left along the rail using the robot's hand.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Select the slider component and drag it to the left of the workstation.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Command the robot arm to pull the slider left in one smooth motion.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Reach for the slider and adjust its position left as needed.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Direct the slider left until it's aligned with the leftmost marker.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+move_slider_right:
+- Slide the control to the right.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Move the slider bar to the rightmost position.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Shift the slider toward the right side.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Adjust the slider by pushing it to the right.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Ensure the slider is all the way to the right.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Drag the slider to the extreme right.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Push the slider gently towards the right edge.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Relocate the slider fully to the right.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Take the slider and move it to the right.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+- Nudge the slider to the right direction until it's at the end.:
+  - Locate the slider.
+  - Move gripper or pusher to the slider.
+  - Apply force to slide left or right as specified.
+  - Monitor the slider's position during movement.
+  - Stop when the desired position is reached.
+open_drawer:
+- Pull the handle of the drawer to slide it open.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Grip the drawer handle with your claw and pull outward.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Identify the drawer and open it by pulling the handle.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Approach the lower compartment and extend the drawer using your arm.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Locate the handle, grab it, and pull the drawer towards yourself.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Use your robotic arm to tug on the handle and open the drawer.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Find the drawer's grip and apply force to pull it open.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Ensure the drawer handle is within reach and pull it to open.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Direct your arm to the drawer's handle and retract to slide it out.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Access the drawer by securing the handle and pulling the drawer open.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+push_blue_block_left:
+- Move the blue block to the left side of the red block.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Slide the blue piece toward the left edge of the table.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Shift the blue object to the left until it can't move further.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Drag the blue block left until it's beside the red one.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Push the blue object leftward along the surface.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Nudge the blue block left, passing the red block.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Relocate the blue piece to the leftmost position.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Position the blue item to the left end of the area.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Guide the blue shape left to align with the red.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Transport the blue block left to the table's boundary.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+push_blue_block_right:
+- Move the blue block to the right until it meets the wall.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Push the blue piece to the right side of the shelf.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Shift the small blue block towards the right end of the table.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Slide the blue object to the right edge of the surface.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Guide the blue block to the right until it touches another object.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Place the blue block to the far right on the platform.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Nudge the blue block rightward till it reaches the boundary.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Transport the blue piece to as far right as possible.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Direct the blue block to the extreme right of the table top.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Move the blue block right until it's aligned with the pink block.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+push_into_drawer:
+- Pick up the yellow ball from the top of the table and place it gently into the open drawer beneath.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Slide the pink object on the table towards the front, then lift it and push it into the drawer.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Locate the blue item on the tabletop and carefully move it into the lower drawer on the table.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Grab the robot arm placed on the table, and make it push the nearby green object into the drawer.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Identify the purple shape near the edge of the table, pick it up, and store it in the open drawer.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Push the smallest object on the table into the drawer using the robot arm.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Direct the robotic arm to sweep all items on the surface into the drawer below.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Lift the red object first, and then drop it into the drawer.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Clear the tabletop by sliding each item into the drawer, starting from the left side.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+- Using the robotic claw, gather all visible items on the tabletop and deposit them in the drawer.:
+  - Locate the drawer.
+  - Move arm/gripper to the drawer handle or edge.
+  - Grasp or make contact with the drawer.
+  - Push or pull to close/open the drawer as needed.
+  - Confirm the drawer is in the target state.
+push_pink_block_left:
+- Move the pink block to the left side of the table.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Slide the pink object towards the blue block's position.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Shift the magenta piece so it is closer to the arm's base.:
+  - Locate the block on the table or slider.
+  - Move gripper above the block.
+  - Lower gripper and grasp the block.
+  - Lift the block upwards.
+  - Hold the block above the surface.
+- Nudge the bright pink block left until it touches the edge of the table.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Push the pink item leftwards past the blue block.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Reposition the pink block to the leftmost position on the table.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Scoot the pink block just left of where it currently sits.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Make sure the pink block is moved as far left as possible.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Adjust the pink block so it is immediately left of the blue block.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Transport the pink block left towards the green item.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+push_pink_block_right:
+- Move the pink block to the right on the table surface.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Slide the pink object rightward without toppling it.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Push the pink block gently to the right edge.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Shift the pink piece to the right, avoiding the blue shape.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Nudge the pink block to your right-hand side.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Guide the pink block to slide to the right.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Direct the pink object to the rightmost area of the table.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Propel the pink block horizontally to the right.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Maneuver the pink shape to the right end of the workspace.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Transport the pink block to the far-right side.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+push_red_block_left:
+- Move the red block to the left side of the surface.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Shift the red block leftwards until it reaches the edge.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Push the red block left without disturbing the pink block.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Gently shove the red block to the far left of the table.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Slide the red block left as far as possible.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Relocate the red block to the left corner of the platform.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Glide the red object towards the left end, ensuring it stays on the table.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Firmly guide the red block left to the boundary of the workspace.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Drag the red block all the way to the left side.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Maneuver the red block left without it toppling over or falling.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+push_red_block_right:
+- Move the red block to the right by sliding it across the table surface.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Gently shift the red block to the right, ensuring it stays on the table.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Using the robotic arm, nudge the red block towards the right side.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Push the red cube to the right, avoiding any other obstacles.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Direct the red block to slide right without lifting it off the table.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Carefully propel the red block to the right by applying force on its left side.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Guide the red block to shift right, maintaining its position on the table's top.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Move the red cube to the right until it reaches the table's edge.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Slide the red block towards the right while keeping it on the flat surface.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Gently push the red block horizontally to the right without toppling it.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+rotate_blue_block_left:
+- Turn the blue block to the left side.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Rotate the azure piece 90 degrees counterclockwise.:
+  - Locate the block on the table or slider.
+  - Move gripper above the block.
+  - Lower gripper and grasp the block.
+  - Lift the block upwards.
+  - Hold the block above the surface.
+- Spin the blue cube to face left.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Twist the blue shape towards the left direction.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Move the blue block in a leftward rotation.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Pivot the blue item left 90 degrees.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Shift the blue piece so it turns to the left.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Angle the blue block to face leftwards.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Swivel the blue object in a left turn.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Turn the blue item counterclockwise to the left.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+rotate_blue_block_right:
+- Locate the blue block on the table with the robot's camera.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Gently grip the blue block using the robot's arm.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Rotate the blue block 90 degrees to the right in place.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Ensure the blue block is fully rotated before releasing it.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Turn the blue block to face right and place it back on the table.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Identify the blue object and perform a rightward rotation motion.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Adjust the robot’s arm to grasp the blue block and turn it right without moving it elsewhere.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Engage the robot’s rotational function to turn the blue block to the right.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Secure the blue block, then perform a clockwise rotation with the robot arm.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+- Rotate the blue block right using the robot's precision tools without lifting it.:
+  - Locate the blue block on the table or slider.
+  - Move gripper above the blue block.
+  - Lower gripper and grasp the blue block.
+  - Lift the blue block upwards.
+  - Hold the blue block above the surface.
+rotate_pink_block_left:
+- Locate the pink block on the table and adjust its position by rotating it to the left.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Find the block that is pink and rotate it to the left-hand side 90 degrees.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Turn the pink piece on the workbench counterclockwise.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Identify the pink object and twist it left.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Search for the pink block and turn it leftwards.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Observe the pink block on the surface and spin it to the left.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Detect the pink shape and rotate it left along its axis.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Spot the pink block and shift its orientation to the left by one-quarter turn.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Seek the pink item on the table and move it left in a circular manner.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Focus on the bright pink block and rotate it to the left.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+rotate_pink_block_right:
+- Turn the pink block to the right.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Rotate the magenta piece clockwise.:
+  - Locate the block on the table or slider.
+  - Move gripper above the block.
+  - Lower gripper and grasp the block.
+  - Lift the block upwards.
+  - Hold the block above the surface.
+- Shift the purple block rightwards.:
+  - Locate the block on the table or slider.
+  - Move gripper above the block.
+  - Lower gripper and grasp the block.
+  - Lift the block upwards.
+  - Hold the block above the surface.
+- Pivot the pink object to the right.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Twist the magenta block to the right side.:
+  - Locate the block on the table or slider.
+  - Move gripper above the block.
+  - Lower gripper and grasp the block.
+  - Lift the block upwards.
+  - Hold the block above the surface.
+- Move the pink block in a rightward turn.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Sway the purple piece to the right.:
+  - Locate the block on the table or slider.
+  - Move gripper above the block.
+  - Lower gripper and grasp the block.
+  - Lift the block upwards.
+  - Hold the block above the surface.
+- Revolve the pink object towards the right.:
+  - Locate the pink block on the table or slider.
+  - Move gripper above the pink block.
+  - Lower gripper and grasp the pink block.
+  - Lift the pink block upwards.
+  - Hold the pink block above the surface.
+- Spin the magenta block rightward.:
+  - Locate the block on the table or slider.
+  - Move gripper above the block.
+  - Lower gripper and grasp the block.
+  - Lift the block upwards.
+  - Hold the block above the surface.
+- Adjust the purple block to face right.:
+  - Locate the block on the table or slider.
+  - Move gripper above the block.
+  - Lower gripper and grasp the block.
+  - Lift the block upwards.
+  - Hold the block above the surface.
+rotate_red_block_left:
+- Turn the red block 90 degrees counterclockwise.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Rotate the red object to the left.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Spin the red cube leftward.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Pivot the red block left.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Shift the red piece 90 degrees to the left.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Swivel the red block to the left side.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Revolve the red square to the left.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Rotate the red item counterclockwise by 90 degrees.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Twist the red block 90 degrees to the left.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Move the red block in a leftward rotation.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+rotate_red_block_right:
+- Shift the red block to the right side of its current position.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Turn the red object clockwise.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Move the red shape slightly to the right.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Adjust the red block to the right by rotating it.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Reorient the red block to face the right.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Swivel the red cube to the right-hand side.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Rotate the position of the red block toward the right.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Modify the orientation of the red shape to the right.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Slide the red piece to the right while rotating it.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+- Pivot the red block towards the right direction.:
+  - Locate the red block on the table or slider.
+  - Move gripper above the red block.
+  - Lower gripper and grasp the red block.
+  - Lift the red block upwards.
+  - Hold the red block above the surface.
+turn_off_led:
+- Locate the LED that is currently on and deactivate it.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Find the glowing LED and switch it off.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Identify the illuminated light and ensure it is turned off.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Seek out the active LED and disable it.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Look for the LED that is lit and power it down.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Locate the light source that is currently glowing and turn it off.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Identify the LED with a light on and shut it down.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Find any LED that is on and make sure to turn it off.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Target the bright LED and disable its light.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Search for the LED currently active and switch it off.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+turn_off_lightbulb:
+- Move the robot arm to the switch and toggle it to turn off the lightbulb.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Locate the source of light and ensure the switch is set to off.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Rotate the robot until it faces the lightbulb, then press the button to turn it off.:
+  - Locate the button.
+  - Move gripper to button.
+  - Press button with required force.
+  - Confirm button activation.
+  - Retract gripper.
+- Use the robot's gripper to flick the switch connected to the lightbulb.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Identify the light source, follow its wire, and toggle the switch at the end.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Extend the mechanical arm and flip the switch that controls the lightbulb on the table.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Navigate towards the light source and deactivate it by pressing the control.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Adjust the robot's position to reach the button and press it to turn off the bulb.:
+  - Locate the button.
+  - Move gripper to button.
+  - Press button with required force.
+  - Confirm button activation.
+  - Retract gripper.
+- Direct the robot to the light fixture and flip the off switch using its gripper.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Find the glowing object and interact with its control to stop the illumination.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+turn_on_led:
+- Activate the LED on the robot's panel.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Illuminate the LED light on the robot.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Switch on the light-emitting diode.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Power up the LED indicator light on the robot.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Trigger the LED to turn on.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Light up the LED component.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Start the LED to shine.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Engage the LED to activate its light.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+- Fire up the LED bulb on the robot.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Set the LED to the 'on' position.:
+  - Identify target object.
+  - Move arm/gripper to object.
+  - Grasp or interact as required.
+  - Move or manipulate as specified.
+  - Confirm completion.
+turn_on_lightbulb:
+- Locate the lightbulb on the table and ensure it's plugged in securely.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Find the switch near the lightbulb and flip it to the 'On' position.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Ensure the lightbulb is tightened properly, then activate the power source connected to it.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Identify the power cord, plug it into a power source, and flip the light switch.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Secure the lightbulb in its socket, then turn the control dial to the 'On' position.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Locate any power buttons or switches on the table and press them to turn on the light.:
+  - Locate the button.
+  - Move gripper to button.
+  - Press button with required force.
+  - Confirm button activation.
+  - Retract gripper.
+- Check if the lightbulb has a pull chain and use it to switch on the light.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Observe any nearby devices that may control the light and interact with them accordingly.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Verify if a remote control is provided and use it to switch on the lightbulb.:
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
+- Look for additional switches under the table and ensure they are set to 'On.':
+  - Locate the light or bulb.
+  - Move arm to light switch or bulb.
+  - Grasp or make contact with target.
+  - Rotate or press as needed.
+  - Confirm light/bulb is in target state.
