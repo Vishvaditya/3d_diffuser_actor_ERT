@@ -33,7 +33,7 @@ from online_evaluation_calvin.multistep_sequences import get_sequences
 from online_evaluation_calvin.evaluate_utils import get_env
 
 EP_LEN = 60
-NUM_SEQUENCES = 27
+NUM_SEQUENCES = 10
 EXECUTE_LEN = 20
 ANNOT_NUM = 0
 
@@ -135,6 +135,10 @@ def evaluate_policy(model, env, conf_dir, annot_dir, eval_log_dir=None, save_vid
     elif args.mode == "descriptive":
         val_annotations = OmegaConf.load(annot_dir / "descriptive_playtable_instructions.yaml")
         print("Annotation Directory: ", os.path.join(annot_dir/"descriptive_playtable_instructions.yaml"))
+
+    elif args.mode == "test":
+        val_annotations = OmegaConf.load(annot_dir / "descriptive_test.yaml")
+        print("Annotation Directory: ", os.path.join(annot_dir/"descriptive_test.yaml"))
 
     eval_log_dir = get_log_dir(eval_log_dir)
 
