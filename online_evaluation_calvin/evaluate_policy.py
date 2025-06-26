@@ -139,6 +139,7 @@ def evaluate_policy(model, env, conf_dir, annot_dir, eval_log_dir=None, save_vid
     elif args.mode == "test":
         val_annotations = OmegaConf.load(annot_dir / "descriptive_test.yaml")
         print("Annotation Directory: ", os.path.join(annot_dir/"descriptive_test.yaml"))
+        save_video = 0
 
     eval_log_dir = get_log_dir(eval_log_dir)
 

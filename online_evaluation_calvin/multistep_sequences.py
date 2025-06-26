@@ -426,7 +426,7 @@ def get_sequences(num_sequences=1000, num_workers=None):
 
         # np.random.shuffle(results)
     print("Total number of sequences: ", len(results))
-    # print(results)
+    print(results)
     logger.info("Done generating evaluation sequences.")
 
     return results

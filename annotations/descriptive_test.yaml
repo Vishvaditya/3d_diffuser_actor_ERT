@@ -1,0 +1,6 @@
+close_drawer:
+- detect the position and state of the open drawer
+- move the end-effector to align in front of the drawer
+- advance the end-effector until it contacts the drawer face
+- push the drawer along its closing axis until fully closed
+- retract the arm to a safe position
